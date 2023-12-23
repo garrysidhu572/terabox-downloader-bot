@@ -20,23 +20,23 @@ bot = Client("pyro", api_id, api_hash, bot_token=bot_token)
 @bot.on_message(filters=filters.command("start") & filters.private)
 async def start(m: Message):
     await m.reply(
-        "Hello! I am a bot to download videos from terabox.\nSend me the terabox link and i will start downloading it. \nJoin @RoldexVerse For Updates. :)",
+        "Hello! I am a bot to download videos from terabox.\nSend me the terabox link and i will start downloading it. \nJoin @TERABOXSUPPORT01 For Updates. :)",
         reply_to_message_id=m.id,
     )
 
 
 @bot.on_message(filters.text & filters.private)
 async def echo_message(_, m: Message):
-    check_if = await is_user_on_chat(bot, -1001345686737, m.from_user.id)
+    check_if = await is_user_on_chat(bot, -1002074421298, m.from_user.id)
     if not check_if:
         return await m.reply_text(
-            "Please join @RoldexVerse then send me the link again.",
+            "Please join @Teraboxsupport01 then send me the link again.",
             reply_to_message_id=m.id,
         )
-    check_if = await is_user_on_chat(bot, -1001320804136, m.from_user.id)
+    check_if = await is_user_on_chat(bot, -1001897182152, m.from_user.id)
     if not check_if:
         return await m.reply_text(
-            "Please join @RoldexVerseChats then send me the link again.",
+            "Please join @GARRYPLAYS then send me the link again.",
             reply_to_message_id=m.id,
         )
 
